@@ -1,0 +1,15 @@
+<div class="center" *ngIf="hero">                                              <!-- Content to render when Hero is Selected -->
+
+  <h2>{{hero.name | uppercase}} <br/>Details</h2>
+  <div><img width="200" alt="hero.pic" src={{hero.pic}}></div>                 <!-- Image for selected Hero -->
+  <div><span>ID Number: </span>{{hero.id}}</div>                               <!-- ID # for selected Hero -->
+  <div><span>Name: </span>{{hero.name}}
+    <!--<label>Name:
+      <input [(ngModel)]="hero.name" placeholder="name" />                          Hero Name Two Way Binding  
+    </label>-->
+  </div>
+
+  <app-rps-game></app-rps-game>
+
+
+</div>

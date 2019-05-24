@@ -1,0 +1,18 @@
+<br/><br/>
+
+<ul class="heroes" >     <!–– Unordered list of Heroes ––>
+      <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">      <!–– Comments below ––>
+          <span class="badge">{{hero.id}}</span> {{hero.name}}      <!–– Use badge CSS class for coloring(span) ––>
+      </li>
+  </ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>     <!–– Binding selectedHero to the hero in hero-detail ––>
+
+
+  <!–– Line 4 comments
+  
+  *ngFor is a repeater. It's repeating every 'hero' in 'heroes' Use the CSS class selected, if hero
+  in list is same type and value as selectedHero. When clicked, call on the onSelect() method with the hero in the
+  list as a parameter. 
+
+  ––>

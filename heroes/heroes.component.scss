@@ -1,0 +1,55 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {      //style for list of heroes
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;     //default background color of list elements.
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li.selected:hover {     //style for a selected hero
+    background-color: black !important;     //background color when mouse hovers over a selected Hero
+    color: white;
+  }
+  .heroes li:hover {      //style for heroes in the list
+    color: Blue;      //Color of text when mouse hovers
+    background-color: yellow;     //background color when mouse hovers
+    left: .1em;
+  }
+  .heroes .text {
+    position: relative;
+    top: -3px;
+  }
+  .heroes .badge {      
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  ul {
+    position: relative;
+    left: 350px;
+    top:575px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
